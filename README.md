@@ -44,7 +44,7 @@
 - Email par défaut : `admin@gmail.com`  
 - Mot de passe par défaut : `admin1234`  
 **Veuillez changer ces identifiants après la première connexion pour garantir la sécurité.**
-  ![Formulaire Formateur](./screenshots/login.PNG)
+  ![Formulaire Formateur](./screenshots/loginAdmin.PNG)
 
   ---
 
