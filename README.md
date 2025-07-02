@@ -7,14 +7,14 @@
 **Gestion de Formateurs** est une application web complète composée de deux parties complémentaires :
 
 ### 🌐 Site web pour visiteurs (formateurs et candidats)
-
+![Formulaire Formateur](./screenshots/site.PNG)
 - Inscription via un formulaire détaillé  
 - Consultation des offres disponibles : formations, emplois, stages  
 - Possibilité de postuler directement en ligne  
 - Accès facile aux opportunités proposées par la société  
 
 ### 🛠️ Application de gestion sécurisée pour l’administrateur
-
+![Formulaire Formateur](./screenshots/listeFormateur.PNG)
 - Connexion via un espace sécurisé (email + mot de passe)  
 - Tableau de bord complet pour gérer le système  
 - Consultation et gestion des formateurs inscrits  
@@ -24,19 +24,9 @@
 
 | Formulaire Inscription        | Liste des Offres             | Tableau de bord Admin        |
 |------------------------------|-----------------------------|------------------------------|
-| ![Formulaire Formateur](./screenshots/formateur_form.png) | ![Liste Offres](./screenshots/offres_liste.png) | ![Dashboard Admin](./screenshots/admin_dashboard.png) |
+| ![Formulaire Formateur](./screenshots/form.PNG) | ![Liste Offres](./screenshots/listeoffreformation.PNG) | ![Dashboard Admin](./screenshots/menuadmin.PNG) |
 
----
 
-## 🚀 Technologies utilisées
-
-- 🖥️ **Laravel** (Framework PHP)  
-- 🐘 **PHP**  
-- 🎨 **Bootstrap** (design et responsivité)  
-- 🌐 **HTML5**  
-- 🎨 **CSS3**
-
----
 
 ## ⚙️ Fonctionnalités principales
 
@@ -47,6 +37,24 @@
 - ✍️ Gestion des offres (création, modification, suppression)  
 - 📊 Suivi des candidatures par offre  
 - 👥 Gestion des utilisateurs du système  
+
+---
+## Informations administrateur
+
+- Email par défaut : `admin@gmail.com`  
+- Mot de passe par défaut : `admin1234`  
+**Veuillez changer ces identifiants après la première connexion pour garantir la sécurité.**
+  ![Formulaire Formateur](./screenshots/login.PNG)
+
+  ---
+
+## 🚀 Technologies utilisées
+
+- 🖥️ **Laravel** (Framework PHP)  
+- 🐘 **PHP**  
+- 🎨 **Bootstrap** (design et responsivité)  
+- 🌐 **HTML5**  
+- 🎨 **CSS3**
 
 ---
 
@@ -69,12 +77,12 @@ git clone https://github.com/oumaoubbad/GestionFormateurs.git
 composer install
 
 # Configurer la base de données dans .env (exemple)
-# DB_CONNECTION=mysql
-# DB_HOST=127.0.0.1
-# DB_PORT=3306
-# DB_DATABASE=nom_de_la_base
-# DB_USERNAME=utilisateur
-# DB_PASSWORD=motdepasse
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=formateur
+DB_USERNAME=root
+DB_PASSWORD=
 
 # Lancer les migrations et seeders
 php artisan migrate --seed
